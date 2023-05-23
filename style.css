@@ -1,0 +1,409 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.dropbtn {
+    background-color: #A4C2A5;
+    color: #F1F2EB;
+    height: 10vh;
+    width: 120px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    /* border: 1px solid #000; */
+    border-color: #A4C2A5;
+    background-image: url(./hamburger-button.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+}
+
+
+.dropbtn:focus {
+    background-color: #f1f1f1;
+    color: #4A4A48;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.wrapper-navbar{
+    /* margin: 10px; */
+    background-color: #A4C2A5;
+    /* border: 1px solid #000; */
+    /* width: calc(100vw - 4rem); */
+    width: 100vw;
+    height: 10vh;
+    /* display: grid; */
+    /* grid-template-columns: repeat(12, 1fr); */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-wrapper{
+    background-color: #D8DAD3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    /* border: 1px solid #000; */
+    /* padding: 2rem; */
+}
+
+.main-text{
+    justify-self: center;
+    font-family: 'Castoro Titling', cursive;
+    color: white;
+    font-size: xx-large;
+}
+
+
+.main-img{
+    display: grid;
+    /* border: 1px solid #000; */
+    grid-row: 2/5;
+    height: fit-content;
+
+    background-size: cover;
+    margin-bottom: 1rem;
+    background-image: url(banner5.jpg);
+    height: 30vh;
+    filter: grayscale(30%);
+    /* box-shadow: 1px 1px 5px; */
+}
+
+.wrapper-main{
+    background-color: #F1F2EB;
+    /* border: 3px solid #b0b; */
+    justify-self: center;
+    grid-row: 5/12;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: 70vw;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.rec{
+    /* border: 1px solid #000; */
+    grid-row: 2/-1;
+    margin: 10px;
+    height: fit-content;
+    box-shadow: 1px 1px 5px rgb(48, 46, 46);
+}
+
+.top-rec{
+    /* border: 1px solid #000; */
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: grid;
+    /* border: 1px solid #000; */
+}
+
+.top-rec-text{
+    font-family: 'Castoro Titling', cursive;
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.rec{
+    grid-column: 1/6;
+    grid-row: 2/6;
+    position: relative;
+}
+
+.rec-bild{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.rec-mitt{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.rec:hover .rec-bild{
+    opacity: 0.3;
+}
+
+.rec:hover .rec-mitt{
+    opacity: 1;
+}
+
+.rec-text{
+    background-color: #566246;
+    color: white;
+    font-size: 18px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.rec2{
+    grid-column: 6/-1;
+    grid-row: 2/6;
+}
+
+.rec3{
+    grid-column: 1/6;
+    grid-row: 6/-1;
+}
+
+.rec4{
+    grid-column: 6/-1;
+    grid-row: 6/-1;
+}
+
+
+.footer{
+    background-color: #A4C2A5;
+}
+
+
+.logo-div{
+    position: relative;
+    /* border: 1px solid #000; */
+    padding-right: 1rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.recept-wrapper img{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    float: right;
+}
+
+.recept-wrapper{
+    /* background-color: #b0b; */
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr;
+    /* border: 1px solid #000; */
+    height: 100vh;
+    width: 80vw;
+    height: 80vh;
+    justify-self: center;
+    margin-top: 3rem;
+}
+
+.recept-ingredienser{
+    /* border: 1px solid #000; */
+    grid-column: 1/5;
+    /* grid-row: 6/-1; */
+
+    background-color: #F1F2EB;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px;
+    margin: 1rem;
+
+}
+
+.recept-ingredienser-wrapper{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+    height: 100%;
+    justify-content: space-around;
+}
+
+
+
+
+.recept-bild{
+    /* border: 1px solid #000; */
+    grid-column: 7/-1;
+    background-color: #F1F2EB;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px;
+    margin: 1rem;
+}
+
+.recept-beskrivning{
+    /* border: 1px solid #000; */
+    grid-column: 1/7;
+    /* grid-row: 1/6; */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #F1F2EB;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px;
+    margin: 1rem;
+}
+
+.recept-beskrivning > p{
+    /* border: 1px solid #000; */
+}
+
+.recept-beskrivning > h2{
+    /* border: 1px solid #000; */
+    
+}
+
+.recept-hur{
+    /* border: 1px solid #000; */
+    grid-column: 5/-1;
+    /* grid-row: 6/-1; */
+    background-color: #F1F2EB;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px;
+    margin: 1rem;
+}
+
+.recept-hur-wrapper{
+    /* border: 1px solid #000; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.allarecept-wrapper{
+    width: 90vw;
+    justify-self: center;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+}
+
+.alla-recept{
+    border: 1px solid #000;
+    /* height: fit-content; */
+}
+
+.om-wrapper{
+    width: 80vw;
+    justify-self: center;
+    line-height: 1.5rem;
+    background-color: #F1F2EB;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+
+}
+@media screen and (max-width: 1000px) {
+    .wrapper-main{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper-main{
+        width: 100vw;
+        grid-template-rows: repeat(17, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .top-rec{
+        grid-row: 1/1;
+        grid-column: 2/3;
+    }
+    .rec{
+        margin: 0;
+        grid-column: 1/-1;
+    }
+    .rec1{
+        grid-row: 2/6;
+    }
+    .rec2{
+        grid-row: 6/10;
+    }
+    .rec3{
+        grid-row: 10/14;
+    }
+    .rec4{
+        grid-row: 14/-1;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .recept-wrapper{
+        /* background-color: #b0b; */
+
+    }
+    .recept-bild{
+        grid-column: 6/-1;
+        grid-row: 1/1;
+        box-shadow: none;
+    }
+    .recept-beskrivning{
+        grid-row: 1/1;
+        box-shadow: none;
+    }
+    .recept-ingredienser{
+        grid-column: 1/6;
+        grid-row: 6/-1;
+        box-shadow: none;
+        height: 40vh;
+    }
+    .recept-hur{
+        /* border: 1px solid #000; */
+        grid-column: 5/-1;
+        grid-row: 6/-1;
+        box-shadow: none;
+        border-left: 3px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .allarecept-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 400px) {
+    .allarecept-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100vw;
+    }
+}

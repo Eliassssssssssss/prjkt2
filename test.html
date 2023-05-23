@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .recepten {
+                border: 4px solid #000;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 100px;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .recept {
+                display: grid;
+                place-items: center;
+
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 70px;
+            }
+
+            .recept__1 {
+                background-color: orange;
+            }
+
+            .recept__2 {
+                background-color: tomato;
+            }
+
+            .recept__3 {
+                background-color: yellowgreen;
+            }
+
+            .recept__4 {
+                background-color: dodgerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="recepten">
+            <div class="recept recept__1">1</div>
+            <div class="recept recept__2">2</div>
+            <div class="recept recept__3">3</div>
+            <div class="recept recept__4">4</div>
+        </div>
+
+        <script>
+            "use strict";
+
+            const array = [1, 2, 3, 4];
+            const shuffledArray = array.sort((a, b) => 0.5 - Math.random());
+            const collection = document.getElementsByClassName("recept");
+
+            let i = 0;
+
+            for (const element of collection) {
+                element.style.order = shuffledArray[i];
+                i++;
+            }
+        </script>
+    </body>
+</html>
